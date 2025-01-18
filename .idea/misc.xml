@@ -1,0 +1,47 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/HMitroV2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2385" />
+        <entry key="..\:/HMitroV2/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2385" />
+        <entry key="..\:/HMitroV2/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2385" />
+        <entry key="..\:/HMitroV2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2385" />
+        <entry key="..\:/HMitroV2/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2385" />
+        <entry key="..\:/HMitroV2/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.2385" />
+        <entry key="..\:/HMitroV2/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2385" />
+        <entry key="..\:/HMitroV2/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2385" />
+        <entry key="..\:/HMitroV2/app/src/main/res/drawable/side_nav_bar.xml" value="0.2385" />
+        <entry key="..\:/HMitroV2/app/src/main/res/font/actor.xml" value="0.19635416666666666" />
+        <entry key="..\:/HMitroV2/app/src/main/res/font/alike_angular.xml" value="0.19635416666666666" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_aboutus.xml" value="0.264" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_contact.xml" value="0.264" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_contact_us.xml" value="0.264" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_developers.xml" value="0.264" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_hotspots.xml" value="0.264" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_main2.xml" value="0.2" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_map_list.xml" value="0.4" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_map_view.xml" value="0.264" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_metro_stations.xml" value="0.176" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_nearest_metro.xml" value="0.2" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_payments.xml" value="0.23229166666666667" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_price_calci.xml" value="0.152" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_travel.xml" value="0.264" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/activity_travel_guide.xml" value="0.1" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/fragment_notifications.xml" value="0.2" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/hotspotsview.xml" value="0.16" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/item.xml" value="0.23229166666666667" />
+        <entry key="..\:/HMitroV2/app/src/main/res/layout/suggestion.xml" value="0.23229166666666667" />
+        <entry key="..\:/HMitroV2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
