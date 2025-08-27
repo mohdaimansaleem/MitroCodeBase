@@ -138,7 +138,7 @@ public class MitroHyd extends AppCompatActivity {
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT,
-                "Hey download this app at play store https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID);
+                "Hey download this app at play store https://play.google.com/store/apps/details?id=");
         sendIntent.setType("text/plain");
         startActivity(sendIntent);
     }

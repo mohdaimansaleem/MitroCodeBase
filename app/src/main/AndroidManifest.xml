@@ -8,11 +8,11 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logo"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HMitroV2">
+        android:theme="@style/Theme.Mitro">
         <activity
             android:name=".parking"
             android:exported="false" />
@@ -71,14 +71,17 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".MitroHyd"
-            android:exported="true"
-            android:launchMode="singleInstance"
-            android:screenOrientation="portrait" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.Mitro.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
     </application>
