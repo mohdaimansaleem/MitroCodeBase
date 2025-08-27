@@ -21,7 +21,7 @@ import com.nexus.myapplication.databinding.ActivityMain2Binding;
 
 import java.util.ArrayList;
 
-public class MitroHyd extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
     private ActivityMain2Binding binding;
     public static String arr[]={
@@ -108,19 +108,19 @@ public class MitroHyd extends AppCompatActivity {
     }
 
 
-    public void mapView(View view){
-        Intent i=new Intent(this,MapView.class);
+    public void map(View view){
+        Intent i=new Intent(this,Map.class);
         startActivity(i);
     }
 
     public void hotspots(View view){
-        Intent i=new Intent(this,hotspots.class);
+        Intent i=new Intent(this, Hotspot.class);
         startActivity(i);
     }
 
 
     public void devs(View view){
-        Intent i=new Intent(this,developers.class);
+        Intent i=new Intent(this, DevTeam.class);
         startActivity(i);
     }
 
@@ -144,20 +144,20 @@ public class MitroHyd extends AppCompatActivity {
     }
 
     public void payments(View view){
-        Intent i=new Intent(this,Payments.class);
+        Intent i=new Intent(this,Payment.class);
         startActivity(i);
     }
 
     public void parking(View view){
-        Intent i=new Intent(this,parking.class);
+        Intent i=new Intent(this, Parking.class);
         startActivity(i);
     }
     public void contact(View view){
-        Intent i=new Intent(this, contact.class);
+        Intent i=new Intent(this, Contact.class);
         startActivity(i);
     }
     public void about(View view){
-        Intent i=new Intent(this,Aboutus.class);
+        Intent i=new Intent(this,AboutUs.class);
         startActivity(i);
     }
     public void time(View view){
@@ -165,7 +165,7 @@ public class MitroHyd extends AppCompatActivity {
         startActivity(i);
     }
     public void stations(View view){
-        Intent i=new Intent(this,MetroStations.class);
+        Intent i=new Intent(this, MetroStation.class);
         startActivity(i);
     }
     public void priceCalci(View view){
@@ -179,11 +179,11 @@ public class MitroHyd extends AppCompatActivity {
         startActivity(i);
     }
     public void guide(View view){
-        Intent i=new Intent(this,travel.class);
+        Intent i=new Intent(this,Travel.class);
         startActivity(i);
     }
     public void nearest(View view){
-        Intent i=new Intent(this,nearestMetro.class);
+        Intent i=new Intent(this,NearestMetro.class);
         startActivity(i);
     }
     public void findDest(View view){
@@ -207,7 +207,7 @@ public class MitroHyd extends AppCompatActivity {
             ans.add(Integer.toString(src));
             ans.add(Integer.toString(dest));
 
-            Intent i = new Intent(this, Map_List.class);
+            Intent i = new Intent(this, MapList.class);
             i.putStringArrayListExtra("list", ans);
             startActivity(i);
         }

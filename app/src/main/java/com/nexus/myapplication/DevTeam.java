@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
-public class developers extends AppCompatActivity {
+public class DevTeam extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

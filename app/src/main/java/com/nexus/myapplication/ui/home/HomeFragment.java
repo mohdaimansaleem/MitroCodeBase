@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.nexus.myapplication.MitroHyd;
+import com.nexus.myapplication.Home;
 import com.nexus.myapplication.R;
 import com.nexus.myapplication.databinding.FragmentHomeBinding;
 
@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
 
 
         AutoCompleteTextView autocomplete1 = (AutoCompleteTextView) root.findViewById(R.id.source1);
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_dropdown_item_1line, MitroHyd.arr);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_dropdown_item_1line, Home.arr);
 
         autocomplete1.setThreshold(1);
         autocomplete1.setAdapter(adapter1);
@@ -49,7 +49,7 @@ public class HomeFragment extends Fragment {
 
 
         AutoCompleteTextView autocomplete2 = (AutoCompleteTextView) root.findViewById(R.id.destination);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_dropdown_item_1line, MitroHyd.arr);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_dropdown_item_1line, Home.arr);
 
         autocomplete2.setThreshold(1);
         autocomplete2.setAdapter(adapter2);

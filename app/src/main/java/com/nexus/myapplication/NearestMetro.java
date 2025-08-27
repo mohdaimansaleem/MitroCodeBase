@@ -14,7 +14,6 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -32,7 +31,7 @@ import java.util.ArrayList;
 
 import pl.droidsonroids.gif.GifImageView;
 
-public class nearestMetro extends AppCompatActivity  implements LocationListener {
+public class NearestMetro extends AppCompatActivity  implements LocationListener {
 
 
 
@@ -75,7 +74,7 @@ public class nearestMetro extends AppCompatActivity  implements LocationListener
             Toast.makeText(this,"Unable to access the location",Toast.LENGTH_SHORT);
         }
         if (!gps_enabled && !network_enabled) {
-            new AlertDialog.Builder(nearestMetro. this )
+            new AlertDialog.Builder(NearestMetro. this )
                     .setMessage( "Please on the GPS location for accurate results" )
                     .setPositiveButton( "Settings" , new
                             DialogInterface.OnClickListener() {
@@ -90,13 +89,13 @@ public class nearestMetro extends AppCompatActivity  implements LocationListener
 
         ActivityCompat.requestPermissions(this,new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
         locationManager = (LocationManager)getApplicationContext().getSystemService(LOCATION_SERVICE);
-        if (!(ActivityCompat.checkSelfPermission(nearestMetro.this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(nearestMetro.this,
+        if (!(ActivityCompat.checkSelfPermission(NearestMetro.this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(NearestMetro.this,
 
                 android.Manifest.permission.ACCESS_COARSE_LOCATION) !=PackageManager.PERMISSION_GRANTED))
         {
-            ActivityCompat.requestPermissions(nearestMetro.this,new String[]
+            ActivityCompat.requestPermissions(NearestMetro.this,new String[]
                     {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
-            locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER,0,0,nearestMetro.this);
+            locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER,0,0,NearestMetro.this);
         }
     }
 
@@ -108,7 +107,7 @@ public class nearestMetro extends AppCompatActivity  implements LocationListener
         lon=location.getLongitude();
 
 
-        locationManager.removeUpdates(nearestMetro.this);
+        locationManager.removeUpdates(NearestMetro.this);
 
 
         String  as = "{\"students\": [\n" +

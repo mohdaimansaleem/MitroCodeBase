@@ -50,7 +50,7 @@ public class PriceCalci extends AppCompatActivity {
         mAdView.loadAd(adRequest);
 
         AutoCompleteTextView autocomplete = (AutoCompleteTextView) findViewById(R.id.source1);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String> (this,android.R.layout.simple_dropdown_item_1line, MitroHyd.arr);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String> (this,android.R.layout.simple_dropdown_item_1line, Home.arr);
 
         autocomplete.setThreshold(1);
         autocomplete.setAdapter(adapter);
@@ -65,7 +65,7 @@ public class PriceCalci extends AppCompatActivity {
 
 
         AutoCompleteTextView autocomplete2 = (AutoCompleteTextView) findViewById(R.id.destination);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, MitroHyd.arr);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, Home.arr);
 
         autocomplete2.setThreshold(1);
         autocomplete2.setAdapter(adapter2);

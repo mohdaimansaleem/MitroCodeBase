@@ -36,7 +36,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class travel extends AppCompatActivity implements LocationListener {
+public class Travel extends AppCompatActivity implements LocationListener {
 
     public double lat;
     public double lon;
@@ -103,7 +103,7 @@ public class travel extends AppCompatActivity implements LocationListener {
         }
         if (!gps_enabled && !network_enabled) {
             try {
-                new AlertDialog.Builder(travel. this )
+                new AlertDialog.Builder(Travel. this )
                         .setMessage( "Please on the GPS location for accurate results" )
                         .setPositiveButton( "Settings" , new
                                 DialogInterface.OnClickListener() {
@@ -125,13 +125,13 @@ public class travel extends AppCompatActivity implements LocationListener {
 
         locationManager = (LocationManager)getApplicationContext().getSystemService(LOCATION_SERVICE);
 
-        if (!(ActivityCompat.checkSelfPermission(travel.this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(travel.this,
+        if (!(ActivityCompat.checkSelfPermission(Travel.this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(Travel.this,
 
                 android.Manifest.permission.ACCESS_COARSE_LOCATION) !=PackageManager.PERMISSION_GRANTED))
         {
-            ActivityCompat.requestPermissions(travel.this,new String[]
+            ActivityCompat.requestPermissions(Travel.this,new String[]
                     {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
-            locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER,0,0,travel.this);
+            locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER,0,0,Travel.this);
 
         }
 
@@ -154,7 +154,7 @@ public class travel extends AppCompatActivity implements LocationListener {
             @Override
             public void onClick(View v) {
 
-                hotspots.HotspotsK();
+                Hotspot.HotspotsK();
 
                 if(s.equals(""))return;
                 try {
@@ -168,7 +168,7 @@ public class travel extends AppCompatActivity implements LocationListener {
                 int ans=0;
                 for(int i=0;i<57;i++)
                 {
-                    if(hotspots.hotspotMap.get(i).contains(s))
+                    if(Hotspot.hotspotMap.get(i).contains(s))
                     {
                         ans=i;
                         break;
@@ -179,7 +179,7 @@ public class travel extends AppCompatActivity implements LocationListener {
                 c.setVisibility(View.VISIBLE);
                 TextView t=findViewById(R.id.textView34);
 
-                t.setText((MitroHyd.arr[ans]));
+                t.setText((Home.arr[ans]));
 
                 if(amk.size()>0){
                     TextView tc=findViewById(R.id.textView32);
@@ -206,7 +206,7 @@ public class travel extends AppCompatActivity implements LocationListener {
         lon=location.getLongitude();
 
 
-        locationManager.removeUpdates(travel.this);
+        locationManager.removeUpdates(Travel.this);
 
 
 

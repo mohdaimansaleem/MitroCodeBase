@@ -48,7 +48,7 @@
                         android:background="#A170AA"
                         android:backgroundTint="#7B5DAF"
                         android:clickable="true"
-                        android:onClick="mapView"
+                        android:onClick="map"
                         card_view:cardBackgroundColor="#732445"
                         card_view:cardCornerRadius="0dp"
                         card_view:cardElevation="10dp">

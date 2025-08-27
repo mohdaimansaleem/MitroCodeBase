@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class hotspots extends AppCompatActivity {
+public class Hotspot extends AppCompatActivity {
 
     public static HashMap<Integer,ArrayList<String>> hotspotMap =new HashMap<>();
     public static ArrayList<String> exampleList = new ArrayList<>();
@@ -276,7 +276,7 @@ public class hotspots extends AppCompatActivity {
         getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.cream));
 
         AutoCompleteTextView autocomplete = (AutoCompleteTextView) findViewById(R.id.destination);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String> (this,android.R.layout.simple_dropdown_item_1line, MitroHyd.arr);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String> (this,android.R.layout.simple_dropdown_item_1line, Home.arr);
 
         autocomplete.setThreshold(1);
         autocomplete.setAdapter(adapter);

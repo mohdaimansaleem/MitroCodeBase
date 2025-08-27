@@ -27,7 +27,7 @@ import java.util.Queue;
 
 
 
-public class Map_List extends AppCompatActivity {
+public class MapList extends AppCompatActivity {
     public Graph gh;
     ArrayList<String> change=new ArrayList<>();
 

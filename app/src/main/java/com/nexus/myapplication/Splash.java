@@ -11,7 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-public class SplashActivity extends AppCompatActivity {
+public class Splash extends AppCompatActivity {
 
     private ImageView logoImage;
     private TextView appNameText;
@@ -48,9 +48,9 @@ public class SplashActivity extends AppCompatActivity {
         });
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, MitroHyd.class);
+            Intent intent = new Intent(Splash.this, Home.class);
             startActivity(intent);
             finish();
-        }, 3000); // Adjust duration as needed
+        }, 2500); // Adjust duration as needed
     }
 }

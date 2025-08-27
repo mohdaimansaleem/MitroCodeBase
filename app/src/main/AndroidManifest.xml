@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nexus.myapplication">
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,69 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mitro">
-        <activity
-            android:name=".parking"
-            android:exported="false" />
-
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-8714725044839705~5700963717" />
-
         <activity
-            android:name=".timeAct"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".developers"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".travel"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".contact"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".hotspots"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Payments"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".PriceCalci"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Map_List"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".nearestMetro"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".MetroStations"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".MapView"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Aboutus"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".MitroHyd"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name=".SplashActivity"
+            android:name=".Splash"
             android:theme="@style/Theme.Mitro.Splash"
             android:exported="true">
             <intent-filter>
@@ -83,7 +23,44 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Map"
+            android:exported="false" />
+        <activity
+            android:name=".Parking"
+            android:exported="false" />
+        <activity
+            android:name=".DevTeam"
+            android:exported="false" />
+        <activity
+            android:name=".Travel"
+            android:exported="false" />
+        <activity
+            android:name=".Contact"
+            android:exported="false" />
+        <activity
+            android:name=".Hotspot"
+            android:exported="false" />
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".PriceCalci"
+            android:exported="false" />
+        <activity
+            android:name=".MapList"
+            android:exported="false" />
+        <activity
+            android:name=".MetroStation"
+            android:exported="false" />
+        <activity
+            android:name=".NearestMetro"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
     </application>
-
 </manifest>
