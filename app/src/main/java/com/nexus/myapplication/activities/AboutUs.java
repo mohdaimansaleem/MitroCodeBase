@@ -1,8 +1,10 @@
-package com.nexus.myapplication;
+package com.nexus.myapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.nexus.myapplication.R;
 
 public class AboutUs extends AppCompatActivity {
 

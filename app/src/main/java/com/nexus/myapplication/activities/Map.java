@@ -1,4 +1,4 @@
-package com.nexus.myapplication;
+package com.nexus.myapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,14 +9,15 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.nexus.myapplication.R;
 
-public class Parking extends AppCompatActivity {
+public class Map extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_parking);
+        setContentView(R.layout.activity_map_view);
+        setTitle("Metro Map");
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -28,5 +29,6 @@ public class Parking extends AppCompatActivity {
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
     }
 }

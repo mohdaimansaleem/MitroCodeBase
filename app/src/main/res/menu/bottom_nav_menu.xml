@@ -2,13 +2,13 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home"
-        android:title="Home" />
+        android:title="@string/title_home" />
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_dashboard"
-        android:title="Dashboard" />
+        android:title="@string/title_features" />
     <item
-        android:id="@+id/navigation_settings"
+        android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_settings"
-        android:title="Settings" />
+        android:title="@string/title_more" />
 </menu>

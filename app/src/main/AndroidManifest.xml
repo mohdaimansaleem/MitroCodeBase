@@ -15,7 +15,7 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-8714725044839705~5700963717" />
         <activity
-            android:name=".Splash"
+            android:name=".activities.Splash"
             android:theme="@style/Theme.Mitro.Splash"
             android:exported="true">
             <intent-filter>
@@ -24,43 +24,43 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Home"
+            android:name=".activities.Home"
             android:exported="false" />
         <activity
-            android:name=".Map"
+            android:name=".activities.Map"
             android:exported="false" />
         <activity
-            android:name=".Parking"
+            android:name=".activities.Parking"
             android:exported="false" />
         <activity
-            android:name=".DevTeam"
+            android:name=".activities.DevTeam"
             android:exported="false" />
         <activity
-            android:name=".Travel"
+            android:name=".activities.Travel"
             android:exported="false" />
         <activity
-            android:name=".Contact"
+            android:name=".activities.Contact"
             android:exported="false" />
         <activity
-            android:name=".Hotspot"
+            android:name=".activities.Hotspot"
             android:exported="false" />
         <activity
-            android:name=".Payment"
+            android:name=".activities.Payment"
             android:exported="false" />
         <activity
-            android:name=".PriceCalci"
+            android:name=".activities.PriceCalci"
             android:exported="false" />
         <activity
-            android:name=".MapList"
+            android:name=".activities.MapList"
             android:exported="false" />
         <activity
-            android:name=".MetroStation"
+            android:name=".activities.MetroStation"
             android:exported="false" />
         <activity
-            android:name=".NearestMetro"
+            android:name=".activities.NearestMetro"
             android:exported="false" />
         <activity
-            android:name=".AboutUs"
+            android:name=".activities.AboutUs"
             android:exported="false" />
     </application>
 </manifest>

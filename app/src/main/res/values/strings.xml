@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Mitro</string>
-    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Mitro</string>
-    <string name="title_dashboard">Features</string>
-    <string name="title_notifications">More</string>
+    <string name="title_features">Features</string>
+    <string name="title_more">More</string>
 
     <string name="feedback">The Information in this app is made available by LT Metro share Your feedback through their <a href="https://www.ltmetro.com">website</a></string>
     <string name="queries">For queries you can write to them at <a href="mailto:customerservice@ltmetro.com">customerservice@ltmetro.com</a> or call them \nat <a href="tel:04023332555">040 2333 2555</a> between 6 AM to 10 PM.</string>

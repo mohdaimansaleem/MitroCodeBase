@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textAlignment="center"
-    tools:context=".DevTeam">
+    tools:context=".activities.DevTeam">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

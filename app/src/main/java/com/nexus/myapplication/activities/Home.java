@@ -1,9 +1,10 @@
-package com.nexus.myapplication;
+package com.nexus.myapplication.activities;
 
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
@@ -16,8 +17,13 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.viewpager2.widget.ViewPager2;
+import java.util.Arrays;
 
+import com.nexus.myapplication.R;
+import com.nexus.myapplication.adapters.HeroAdapter;
 import com.nexus.myapplication.databinding.ActivityMain2Binding;
+import com.nexus.myapplication.timeAct;
 
 import java.util.ArrayList;
 
@@ -52,8 +58,8 @@ public class Home extends AppCompatActivity {
             "Chaitanyapuri R24",
             "Victoria Memorial R25",
             "LB Nagar R26",
-            "Nagole B27",
-            "Uppal B28",
+            "Nagole",
+            "Uppal",
             "Stadium B29",
             "NGRI B30",
             "Habsiguda B31",
@@ -105,11 +111,36 @@ public class Home extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main2);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+        ViewPager2 heroViewPager = findViewById(R.id.heroViewPager);
+        HeroAdapter adapter = new HeroAdapter(Arrays.asList(
+                R.drawable.hero4,
+                R.drawable.hero2,
+                R.drawable.hero3
+        ));
+        heroViewPager.setAdapter(adapter);
+
+// Auto-scroll logic
+        Handler handler = new Handler();
+        Runnable runnable = new Runnable() {
+            int currentPage = 0;
+
+            @Override
+            public void run() {
+                if (currentPage >= adapter.getItemCount()) {
+                    currentPage = 0;
+                }
+                heroViewPager.setCurrentItem(currentPage++, true);
+                handler.postDelayed(this, 3000); // scroll every 3 seconds
+            }
+        };
+        handler.post(runnable);
+
+
     }
 
 
     public void map(View view){
-        Intent i=new Intent(this,Map.class);
+        Intent i=new Intent(this, Map.class);
         startActivity(i);
     }
 
@@ -144,7 +175,7 @@ public class Home extends AppCompatActivity {
     }
 
     public void payments(View view){
-        Intent i=new Intent(this,Payment.class);
+        Intent i=new Intent(this, Payment.class);
         startActivity(i);
     }
 
@@ -157,11 +188,11 @@ public class Home extends AppCompatActivity {
         startActivity(i);
     }
     public void about(View view){
-        Intent i=new Intent(this,AboutUs.class);
+        Intent i=new Intent(this, AboutUs.class);
         startActivity(i);
     }
     public void time(View view){
-        Intent i=new Intent(this,timeAct.class);
+        Intent i=new Intent(this, timeAct.class);
         startActivity(i);
     }
     public void stations(View view){
@@ -169,7 +200,7 @@ public class Home extends AppCompatActivity {
         startActivity(i);
     }
     public void priceCalci(View view){
-        Intent i=new Intent(this,PriceCalci.class);
+        Intent i=new Intent(this, PriceCalci.class);
         startActivity(i);
     }
     public void feedback(View view){
@@ -179,11 +210,11 @@ public class Home extends AppCompatActivity {
         startActivity(i);
     }
     public void guide(View view){
-        Intent i=new Intent(this,Travel.class);
+        Intent i=new Intent(this, Travel.class);
         startActivity(i);
     }
     public void nearest(View view){
-        Intent i=new Intent(this,NearestMetro.class);
+        Intent i=new Intent(this, NearestMetro.class);
         startActivity(i);
     }
     public void findDest(View view){

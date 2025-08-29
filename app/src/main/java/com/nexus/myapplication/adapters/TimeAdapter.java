@@ -1,4 +1,4 @@
-package com.nexus.myapplication;
+package com.nexus.myapplication.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+
+import com.nexus.myapplication.R;
 
 import java.util.ArrayList;
 import java.util.List;

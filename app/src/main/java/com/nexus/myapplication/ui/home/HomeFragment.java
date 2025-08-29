@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.nexus.myapplication.Home;
+import com.nexus.myapplication.activities.Home;
 import com.nexus.myapplication.R;
 import com.nexus.myapplication.databinding.FragmentHomeBinding;
 

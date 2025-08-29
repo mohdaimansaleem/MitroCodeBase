@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="red">#e41f25</color>
+
     <color name="blue">#007aba</color>
-    <color name="green">#019847</color>
+    <color name="green">#000000</color>
 
     <color name="white">#FFFFFF</color>
+    <color name="red">#C80D24</color>
+    <color name="black">#000000</color>
     <color name="major">#000000</color>
 
     <color name="cream">#CAB1B1</color>
-    <color name="black">#732445</color>
+
+    <color name="dark">#000000</color>
     <color name="ic_launcher_background">#131313</color>
     <color name="logo_bg">#131313</color>
+
+    <color name="primary">#FFFFFF</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="secondary">#D0BCFF</color>
+
+    <color name="nav_icon_selector">#3F51B5</color>
+    <color name="nav_text_selector">#9E9E9E</color>
 </resources>

@@ -1,4 +1,4 @@
-package com.nexus.myapplication;
+package com.nexus.myapplication.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.nexus.myapplication.R;
+
 public class Splash extends AppCompatActivity {
 
     private ImageView logoImage;

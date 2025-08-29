@@ -1,10 +1,12 @@
-package com.nexus.myapplication;
+package com.nexus.myapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
+
+import com.nexus.myapplication.R;
 
 public class Contact extends AppCompatActivity {
 

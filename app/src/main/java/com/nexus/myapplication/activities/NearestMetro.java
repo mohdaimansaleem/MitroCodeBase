@@ -1,4 +1,4 @@
-package com.nexus.myapplication;
+package com.nexus.myapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -23,6 +23,8 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.nexus.myapplication.R;
+import com.nexus.myapplication.suggestion;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

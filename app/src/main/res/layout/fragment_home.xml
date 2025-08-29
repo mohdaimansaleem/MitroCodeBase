@@ -1,154 +1,170 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fatherLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#FFFFFF"
-    android:elevation="0dp"
-    android:orientation="vertical"
-    tools:context=".ui.home.HomeFragment">
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:paddingBottom="60dp"
+    android:clipToPadding="false"
+    tools:context=".activities.Home">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/startcard"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:cardCornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        style="@style/CardView."
-        >
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <!-- 🖼️ Hero Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/heroCard"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="200dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="6dp">
 
-            <TextView
-                android:id="@+id/textView6"
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/heroViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- 📍 Source & Destination Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/brotherCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/source1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_gray_bg"
+                    android:drawableLeft="@android:drawable/ic_menu_mylocation"
+                    android:drawablePadding="8dp"
+                    android:hint="Source Station"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#666666" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/source1"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/rounded_gray_bg"
+                    android:drawableLeft="@android:drawable/ic_menu_directions"
+                    android:drawablePadding="8dp"
+                    android:hint="Destination Station"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#666666" />
+
+                <Button
+                    android:id="@+id/findDest"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/destination"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#85BCD9"
+                    android:padding="10dp"
+                    android:text="View Path"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 Quick Search Row -->
+        <HorizontalScrollView
+            android:id="@+id/quickSearchRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:scrollbars="none">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hey Hello 👋..."
-                android:textColor="#FFFFFF"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.134"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.248" />
+                android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/img3"
-                android:layout_width="100dp"
-                android:layout_height="81dp"
-                android:src="@drawable/dora"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.868"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.033" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <!-- Quick Search Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="#000000"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
 
-    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView19"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/startcard"
-        app:layout_constraintVertical_bias="0.176">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@android:drawable/ic_menu_mylocation" />
 
-        <LinearLayout
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Station A → B"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Add more cards as needed -->
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- 🗺️ Metro Map Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sisterCard"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="400dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="6dp">
 
-            <AutoCompleteTextView
-                android:id="@+id/source1"
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="#FFFFFF"
-                android:elevation="5dp"
-                android:ems="10"
-                android:hint="Source Station"
-                android:inputType="textPersonName"
-                android:paddingStart="10dp"
-                android:textAllCaps="false" />
+            <com.jsibbold.zoomage.ZoomageView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/metromap"
+                app:zoomage_animateOnReset="true"
+                app:zoomage_autoCenter="true"
+                app:zoomage_autoResetMode="UNDER"
+                app:zoomage_maxScale="8"
+                app:zoomage_minScale="0.6"
+                app:zoomage_restrictBounds="false"
+                app:zoomage_translatable="true"
+                app:zoomage_zoomable="true" />
+        </androidx.cardview.widget.CardView>
 
-            <AutoCompleteTextView
-                android:id="@+id/destination"
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:background="#FFFFFF"
-                android:elevation="5dp"
-                android:ems="10"
-                android:hint="Destination Station"
-                android:inputType="textPersonName"
-                android:paddingStart="10dp" />
+        <!-- 🧩 Footer Card -->
+        <include layout="@layout/footer_card" />
 
-            <Button
-                android:id="@+id/findDest"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:onClick="findDest"
-                android:text="View Path"
-                app:backgroundTint="#420D34" />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="409dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="5dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView19">
-
-        <com.jsibbold.zoomage.ZoomageView
-
-            android:id="@+id/imageView52"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:src="@drawable/metromap"
-            app:zoomage_animateOnReset="true"
-            app:zoomage_autoCenter="true"
-
-            app:zoomage_autoResetMode="UNDER"
-            app:zoomage_maxScale="8"
-            app:zoomage_minScale="0.6"
-            app:zoomage_restrictBounds="false"
-            app:zoomage_translatable="true"
-            app:zoomage_zoomable="true" />
-
-    </androidx.cardview.widget.CardView>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

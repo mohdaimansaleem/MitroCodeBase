@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "HMitro"
+rootProject.name = "Mitro"
 include ':app'

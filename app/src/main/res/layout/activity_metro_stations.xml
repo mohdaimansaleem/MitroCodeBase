@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:elevation="10dp"
     android:orientation="vertical"
-    tools:context=".MetroStation">
+    tools:context=".activities.MetroStation">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

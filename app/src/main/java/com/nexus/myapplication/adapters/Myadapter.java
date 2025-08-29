@@ -1,4 +1,4 @@
-package com.nexus.myapplication;
+package com.nexus.myapplication.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+
+import com.nexus.myapplication.R;
 
 import java.util.List;
 
