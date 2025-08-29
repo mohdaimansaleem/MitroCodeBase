@@ -1,0 +1,435 @@
+{
+    "lines": [
+        {
+            "lineName": "Red Line",
+            "lineColor": "#FF0000",
+            "stations": [
+                {
+                    "stationId": 101,
+                    "name": "Miyapur",
+                    "latitude": "17.496555",
+                    "longitude": "78.373071",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 102,
+                    "name": "JNTU College",
+                    "latitude": "17.493234",
+                    "longitude": "78.399876",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 103,
+                    "name": "KPHB Colony",
+                    "latitude": "17.484812",
+                    "longitude": "78.399122",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 104,
+                    "name": "Kukatpally",
+                    "latitude": "17.484000",
+                    "longitude": "78.391000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 105,
+                    "name": "Dr B R Ambedkar Balanagar",
+                    "latitude": "17.470000",
+                    "longitude": "78.390000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 106,
+                    "name": "Moosapet",
+                    "latitude": "17.460000",
+                    "longitude": "78.395000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 107,
+                    "name": "Bharat Nagar",
+                    "latitude": "17.455000",
+                    "longitude": "78.400000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 108,
+                    "name": "Erragadda",
+                    "latitude": "17.450000",
+                    "longitude": "78.405000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 109,
+                    "name": "ESI Hospital",
+                    "latitude": "17.445000",
+                    "longitude": "78.410000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 110,
+                    "name": "S R Nagar",
+                    "latitude": "17.440000",
+                    "longitude": "78.415000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 111,
+                    "name": "Ameerpet",
+                    "latitude": "17.433000",
+                    "longitude": "78.441000",
+                    "isInterchange": true
+                },
+                {
+                    "stationId": 112,
+                    "name": "Punjagutta",
+                    "latitude": "17.420000",
+                    "longitude": "78.450000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 113,
+                    "name": "Irrum Manzil",
+                    "latitude": "17.415000",
+                    "longitude": "78.455000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 114,
+                    "name": "Khairatabad",
+                    "latitude": "17.410000",
+                    "longitude": "78.460000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 115,
+                    "name": "Lakdi-ka-pul",
+                    "latitude": "17.406000",
+                    "longitude": "78.462000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 116,
+                    "name": "Assembly",
+                    "latitude": "17.400000",
+                    "longitude": "78.465000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 117,
+                    "name": "Nampally",
+                    "latitude": "17.392000",
+                    "longitude": "78.472000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 118,
+                    "name": "Gandhi Bhavan",
+                    "latitude": "17.385000",
+                    "longitude": "78.478000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 119,
+                    "name": "Osmania Hospital",
+                    "latitude": "17.380000",
+                    "longitude": "78.485000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 120,
+                    "name": "MG Bus Station",
+                    "latitude": "17.375000",
+                    "longitude": "78.490000",
+                    "isInterchange": true
+                },
+                {
+                    "stationId": 121,
+                    "name": "Malakpet",
+                    "latitude": "17.370000",
+                    "longitude": "78.495000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 122,
+                    "name": "New Market",
+                    "latitude": "17.365000",
+                    "longitude": "78.500000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 123,
+                    "name": "Musarambagh",
+                    "latitude": "17.360000",
+                    "longitude": "78.505000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 124,
+                    "name": "Dilsukhnagar",
+                    "latitude": "17.355000",
+                    "longitude": "78.510000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 125,
+                    "name": "Chaitanyapuri",
+                    "latitude": "17.350000",
+                    "longitude": "78.515000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 126,
+                    "name": "Victoria Memorial",
+                    "latitude": "17.345000",
+                    "longitude": "78.520000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 127,
+                    "name": "LB Nagar",
+                    "latitude": "17.340000",
+                    "longitude": "78.525000",
+                    "isInterchange": false
+                }
+            ]
+        },
+        {
+            "lineName": "Blue Line",
+            "lineColor": "#0000FF",
+            "stations": [
+                {
+                    "stationId": 201,
+                    "name": "Nagole",
+                    "latitude": "17.390970",
+                    "longitude": "78.550470",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 202,
+                    "name": "Uppal",
+                    "latitude": "17.400000",
+                    "longitude": "78.528000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 203,
+                    "name": "Stadium",
+                    "latitude": "17.410000",
+                    "longitude": "78.515000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 204,
+                    "name": "NGRI",
+                    "latitude": "17.420000",
+                    "longitude": "78.505000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 205,
+                    "name": "Habsiguda",
+                    "latitude": "17.425000",
+                    "longitude": "78.495000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 206,
+                    "name": "Tarnaka",
+                    "latitude": "17.430000",
+                    "longitude": "78.485000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 207,
+                    "name": "Mettuguda",
+                    "latitude": "17.435000",
+                    "longitude": "78.475000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 208,
+                    "name": "Secunderabad East",
+                    "latitude": "17.440000",
+                    "longitude": "78.465000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 209,
+                    "name": "JBS Parade Ground",
+                    "latitude": "17.445000",
+                    "longitude": "78.455000",
+                    "isInterchange": true
+                },
+                {
+                    "stationId": 210,
+                    "name": "Paradise",
+                    "latitude": "17.450000",
+                    "longitude": "78.445000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 211,
+                    "name": "Rasoolpura",
+                    "latitude": "17.455000",
+                    "longitude": "78.435000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 212,
+                    "name": "Prakash Nagar",
+                    "latitude": "17.460000",
+                    "longitude": "78.425000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 213,
+                    "name": "Begumpet",
+                    "latitude": "17.465000",
+                    "longitude": "78.415000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 111,
+                    "name": "Ameerpet",
+                    "latitude": "17.433000",
+                    "longitude": "78.441000",
+                    "isInterchange": true
+                },
+                {
+                    "stationId": 215,
+                    "name": "Madhura Nagar",
+                    "latitude": "17.430000",
+                    "longitude": "78.430000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 216,
+                    "name": "Yusufguda",
+                    "latitude": "17.425000",
+                    "longitude": "78.420000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 217,
+                    "name": "Road No. 5 Jubilee Hills",
+                    "latitude": "17.420000",
+                    "longitude": "78.410000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 218,
+                    "name": "Jubilee Hills Check Post",
+                    "latitude": "17.415000",
+                    "longitude": "78.400000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 219,
+                    "name": "Peddamma Gudi",
+                    "latitude": "17.410000",
+                    "longitude": "78.390000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 220,
+                    "name": "Madhapur",
+                    "latitude": "17.405000",
+                    "longitude": "78.385000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 221,
+                    "name": "Durgam Cheruvu",
+                    "latitude": "17.400000",
+                    "longitude": "78.380000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 222,
+                    "name": "Hitech City",
+                    "latitude": "17.450000",
+                    "longitude": "78.390000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 223,
+                    "name": "Raidurg",
+                    "latitude": "17.395000",
+                    "longitude": "78.375000",
+                    "isInterchange": false
+                }
+            ]
+        },
+        {
+            "lineName": "Green Line",
+            "lineColor": "#00AA00",
+            "stations": [
+                {
+                    "stationId": 209,
+                    "name": "JBS Parade Ground",
+                    "latitude": "17.445000",
+                    "longitude": "78.455000",
+                    "isInterchange": true
+                },
+                {
+                    "stationId": 302,
+                    "name": "Secunderabad West",
+                    "latitude": "17.452000",
+                    "longitude": "78.520000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 303,
+                    "name": "Gandhi Hospital",
+                    "latitude": "17.448000",
+                    "longitude": "78.512000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 304,
+                    "name": "Musheerabad",
+                    "latitude": "17.444000",
+                    "longitude": "78.504000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 305,
+                    "name": "RTC Cross Roads",
+                    "latitude": "17.440000",
+                    "longitude": "78.496000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 306,
+                    "name": "Chikkadpally",
+                    "latitude": "17.436000",
+                    "longitude": "78.488000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 307,
+                    "name": "Narayanaguda",
+                    "latitude": "17.432000",
+                    "longitude": "78.480000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 308,
+                    "name": "Sultan Bazaar",
+                    "latitude": "17.428000",
+                    "longitude": "78.472000",
+                    "isInterchange": false
+                },
+                {
+                    "stationId": 120,
+                    "name": "MG Bus Station",
+                    "latitude": "17.375000",
+                    "longitude": "78.490000",
+                    "isInterchange": true
+                }
+            ]
+        }
+    ]
+}
